@@ -1,0 +1,142 @@
+ALL_COLS:
+- Age
+- Attrition
+- BusinessTravel
+- DailyRate
+- Department
+- DistanceFromHome
+- Education
+- EducationField
+- EnvironmentSatisfaction
+- Gender
+- HourlyRate
+- JobInvolvement
+- JobLevel
+- JobRole
+- JobSatisfaction
+- MaritalStatus
+- MonthlyIncome
+- MonthlyRate
+- NumCompaniesWorked
+- OverTime
+- PercentSalaryHike
+- PerformanceRating
+- RelationshipSatisfaction
+- StockOptionLevel
+- TotalWorkingYears
+- TrainingTimesLastYear
+- WorkLifeBalance
+- YearsAtCompany
+- YearsInCurrentRole
+- YearsSinceLastPromotion
+- YearsWithCurrManager
+NUM_COLS:
+- Age
+- DailyRate
+- DistanceFromHome
+- EnvironmentSatisfaction
+- HourlyRate
+- JobInvolvement
+- JobLevel
+- JobSatisfaction
+- MonthlyIncome
+- MonthlyRate
+- NumCompaniesWorked
+- PercentSalaryHike
+- PerformanceRating
+- RelationshipSatisfaction
+- StockOptionLevel
+- TotalWorkingYears
+- TrainingTimesLastYear
+- WorkLifeBalance
+- YearsAtCompany
+- YearsInCurrentRole
+- YearsSinceLastPromotion
+- YearsWithCurrManager
+OBJ_COLS:
+- Attrition
+- BusinessTravel
+- Department
+- Education
+- EducationField
+- Gender
+- JobRole
+- MaritalStatus
+- OverTime
+PATH_PROCESSED_DATA: attrition_processed.csv
+PATH_RAW_DATA: attrition_raw.csv
+PATH_TEST_DATA:
+- X_test.pkl
+- y_test.pkl
+PATH_TRAIN_DATA:
+- X_train.pkl
+- y_train.pkl
+RANDOM_STATE: 42
+RANGE_AGE:
+- 18
+- 60
+RANGE_DAILYRATE:
+- 102
+- 1499
+RANGE_DISTANCEFROMHOME:
+- 1
+- 29
+RANGE_ENVIRONMENTSATISFACTION:
+- 1
+- 4
+RANGE_HOURLYRATE:
+- 30
+- 100
+RANGE_JOBINVOLVEMENT:
+- 1
+- 4
+RANGE_JOBLEVEL:
+- 1
+- 5
+RANGE_JOBSATISFACTION:
+- 1
+- 4
+RANGE_MONTHLYINCOME:
+- 1009
+- 19999
+RANGE_MONTHLYRATE:
+- 2094
+- 26999
+RANGE_NUMCOMPANIESWORKED:
+- 0
+- 9
+RANGE_PERCENTSALARYHIKE:
+- 11
+- 25
+RANGE_PERFORMANCERATING:
+- 3
+- 4
+RANGE_RELATIONSHIPSATISFACTION:
+- 1
+- 4
+RANGE_STOCKOPTIONLEVEL:
+- 0
+- 3
+RANGE_TOTALWORKINGYEARS:
+- 0
+- 40
+RANGE_TRAININGTIMESLASTYEAR:
+- 0
+- 6
+RANGE_WORKLIFEBALANCE:
+- 1
+- 4
+RANGE_YEARSATCOMPANY:
+- 0
+- 40
+RANGE_YEARSINCURRENTROLE:
+- 0
+- 18
+RANGE_YEARSSINCELASTPROMOTION:
+- 0
+- 15
+RANGE_YEARSWITHCURRMANAGER:
+- 0
+- 17
+TARGET_COL: Attrition
+TEST_SIZE: 0.2
