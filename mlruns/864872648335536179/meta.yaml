@@ -1,0 +1,8 @@
+artifact_location: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179
+creation_time: 1779515907286
+experiment_id: '864872648335536179'
+last_update_time: 1779515907286
+lifecycle_stage: active
+name: employee_attrition_project
+trace_location: null
+workspace: default

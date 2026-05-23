@@ -1,0 +1,14 @@
+artifact_uri: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179/7c464a55084741279f3aff8c0b48e43e/artifacts
+end_time: 1779516313688
+entry_point_name: ''
+experiment_id: '864872648335536179'
+lifecycle_stage: active
+run_id: 7c464a55084741279f3aff8c0b48e43e
+run_name: XGB
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779516270473
+status: 3
+tags: []
+user_id: bagaskoroah

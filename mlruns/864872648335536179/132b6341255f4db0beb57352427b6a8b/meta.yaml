@@ -1,0 +1,14 @@
+artifact_uri: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179/132b6341255f4db0beb57352427b6a8b/artifacts
+end_time: 1779516224078
+entry_point_name: ''
+experiment_id: '864872648335536179'
+lifecycle_stage: active
+run_id: 132b6341255f4db0beb57352427b6a8b
+run_name: CBC
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779515907395
+status: 3
+tags: []
+user_id: bagaskoroah

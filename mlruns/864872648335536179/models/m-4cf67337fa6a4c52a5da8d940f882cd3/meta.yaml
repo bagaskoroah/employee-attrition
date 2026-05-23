@@ -1,0 +1,10 @@
+artifact_location: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179/models/m-4cf67337fa6a4c52a5da8d940f882cd3/artifacts
+creation_timestamp: 1779516267334
+experiment_id: '864872648335536179'
+last_updated_timestamp: 1779516270468
+model_id: m-4cf67337fa6a4c52a5da8d940f882cd3
+model_type: null
+name: model
+source_run_id: 587160e7e4a343e09469de05b0c9ae2a
+status: 2
+status_message: null

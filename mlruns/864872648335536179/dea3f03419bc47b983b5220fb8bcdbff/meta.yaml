@@ -1,0 +1,14 @@
+artifact_uri: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179/dea3f03419bc47b983b5220fb8bcdbff/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '864872648335536179'
+lifecycle_stage: active
+run_id: dea3f03419bc47b983b5220fb8bcdbff
+run_name: abundant-ray-145
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779516313914
+status: 1
+tags: []
+user_id: bagaskoroah

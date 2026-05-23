@@ -1,0 +1,14 @@
+artifact_uri: file:///home/bagaskoroah/employee_attrition/mlruns/864872648335536179/587160e7e4a343e09469de05b0c9ae2a/artifacts
+end_time: 1779516270470
+entry_point_name: ''
+experiment_id: '864872648335536179'
+lifecycle_stage: active
+run_id: 587160e7e4a343e09469de05b0c9ae2a
+run_name: RFC
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779516224080
+status: 3
+tags: []
+user_id: bagaskoroah
