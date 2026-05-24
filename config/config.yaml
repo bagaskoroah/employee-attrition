@@ -31,6 +31,11 @@ ALL_COLS:
 - YearsSinceLastPromotion
 - YearsWithCurrManager
 BEST_THRESHOLD_POINT: 0.45
+BEST_L2_LEAF_REG: 7
+BEST_DEPTH: 3
+BEST_RANDOM_STRENGTH: 5
+BEST_LEARNING_RATE: 0.01
+BEST_ITERATIONS: 100
 CAT_COLS:
 - BusinessTravel
 - Department
@@ -136,6 +141,7 @@ PARAMS_XGB:
   model__subsample:
   - 0.7
   - 0.8
+PATH_BEST_MODEL: best_model.pkl
 PATH_PROCESSED_DATA: attrition_processed.csv
 PATH_RAW_DATA: attrition_raw.csv
 PATH_TEST_DATA:
