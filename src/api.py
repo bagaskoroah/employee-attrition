@@ -1,9 +1,9 @@
-from utils import *
+from src.utils import *
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
-from path import *
+from src.path import *
 
 # load config
 config = load_config(config_path=CONFIG_PATH)
@@ -58,7 +58,7 @@ def predict(data: DataAPI):
     predict_proba_res = best_model.predict_proba(data)[:, 1][0]
 
     # apply best threshold
-    y_pred = int(predict_proba_res >= threshold)
+    y_pred = int(predict_proba_res >= config['BEST_THRESHOLD_POINT'])
 
     if y_pred == 0:
         res = 'Attrition: No'
