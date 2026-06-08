@@ -7,33 +7,26 @@ st.set_page_config(
     layout='wide'
 )
 
-st.title('📊 Employee Attrition Prediction')
+st.title('Employee Attrition Prediction Tool')
 st.markdown(
     'Predict employee attrition probability using the trained machine learning model.'
 )
 
 with st.form('prediction_form'):
-
     st.subheader('Employee Information')
 
-    col1, col2, col3 = st.columns(3)
+    # 3 kolom utama
+    col_num1, col_num2, col_cat = st.columns([1, 1, 1])
 
-    with col1:
+    with col_num1:
+
+        st.markdown('### Personal & Compensation')
 
         Age = st.slider(
             'Age',
             min_value=18,
             max_value=60,
             value=30
-        )
-
-        BusinessTravel = st.selectbox(
-            'Business Travel',
-            options=[
-                'Non-Travel',
-                'Travel_Rarely',
-                'Travel_Frequently'
-            ]
         )
 
         DailyRate = st.slider(
@@ -43,15 +36,6 @@ with st.form('prediction_form'):
             value=800
         )
 
-        Department = st.selectbox(
-            'Department',
-            options=[
-                'Sales',
-                'Research & Development',
-                'Human Resources'
-            ]
-        )
-
         DistanceFromHome = st.slider(
             'Distance From Home',
             min_value=1,
@@ -59,92 +43,11 @@ with st.form('prediction_form'):
             value=10
         )
 
-        Education = st.selectbox(
-            'Education',
-            options=[
-                'Below College',
-                'College',
-                'Bachelor',
-                'Master',
-                'Doctor'
-            ]
-        )
-
-        EducationField = st.selectbox(
-            'Education Field',
-            options=[
-                'Life Sciences',
-                'Medical',
-                'Marketing',
-                'Technical Degree',
-                'Human Resources',
-                'Other'
-            ]
-        )
-
-        EnvironmentSatisfaction = st.slider(
-            'Environment Satisfaction',
-            min_value=1,
-            max_value=4,
-            value=3
-        )
-
-        Gender = st.selectbox(
-            'Gender',
-            options=['Male', 'Female']
-        )
-
         HourlyRate = st.slider(
             'Hourly Rate',
             min_value=30,
             max_value=100,
             value=60
-        )
-
-    with col2:
-        JobInvolvement = st.slider(
-            'Job Involvement',
-            min_value=1,
-            max_value=4,
-            value=3
-        )
-
-        JobLevel = st.slider(
-            'Job Level',
-            min_value=1,
-            max_value=5,
-            value=2
-        )
-
-        JobRole = st.selectbox(
-            'Job Role',
-            options=[
-                'Sales Executive',
-                'Research Scientist',
-                'Laboratory Technician',
-                'Manufacturing Director',
-                'Healthcare Representative',
-                'Manager',
-                'Sales Representative',
-                'Research Director',
-                'Human Resources'
-            ]
-        )
-
-        JobSatisfaction = st.slider(
-            'Job Satisfaction',
-            min_value=1,
-            max_value=4,
-            value=3
-        )
-
-        MaritalStatus = st.selectbox(
-            'Marital Status',
-            options=[
-                'Single',
-                'Married',
-                'Divorced'
-            ]
         )
 
         MonthlyIncome = st.slider(
@@ -161,18 +64,6 @@ with st.form('prediction_form'):
             value=12000
         )
 
-        NumCompaniesWorked = st.slider(
-            'Number of Companies Worked',
-            min_value=0,
-            max_value=9,
-            value=2
-        )
-
-        OverTime = st.selectbox(
-            'Over Time',
-            options=['Yes', 'No']
-        )
-
         PercentSalaryHike = st.slider(
             'Percent Salary Hike',
             min_value=11,
@@ -180,11 +71,41 @@ with st.form('prediction_form'):
             value=15
         )
 
-    with col3:
+        StockOptionLevel = st.slider(
+            'Stock Option Level',
+            min_value=0,
+            max_value=3,
+            value=1
+        )
 
-        PerformanceRating = st.slider(
-            'Performance Rating',
-            min_value=3,
+    with col_num2:
+
+        st.markdown('### Career & Performance')
+
+        JobInvolvement = st.slider(
+            'Job Involvement',
+            min_value=1,
+            max_value=4,
+            value=3
+        )
+
+        JobLevel = st.slider(
+            'Job Level',
+            min_value=1,
+            max_value=5,
+            value=2
+        )
+
+        JobSatisfaction = st.slider(
+            'Job Satisfaction',
+            min_value=1,
+            max_value=4,
+            value=3
+        )
+
+        EnvironmentSatisfaction = st.slider(
+            'Environment Satisfaction',
+            min_value=1,
             max_value=4,
             value=3
         )
@@ -196,11 +117,18 @@ with st.form('prediction_form'):
             value=3
         )
 
-        StockOptionLevel = st.slider(
-            'Stock Option Level',
+        PerformanceRating = st.slider(
+            'Performance Rating',
+            min_value=3,
+            max_value=4,
+            value=3
+        )
+
+        NumCompaniesWorked = st.slider(
+            'Number of Companies Worked',
             min_value=0,
-            max_value=3,
-            value=1
+            max_value=9,
+            value=2
         )
 
         TotalWorkingYears = st.slider(
@@ -250,6 +178,85 @@ with st.form('prediction_form'):
             min_value=0,
             max_value=17,
             value=3
+        )
+
+    with col_cat:
+
+        st.markdown('### Employee Profile')
+
+        BusinessTravel = st.selectbox(
+            'Business Travel',
+            [
+                'Non-Travel',
+                'Travel_Rarely',
+                'Travel_Frequently'
+            ]
+        )
+
+        Department = st.selectbox(
+            'Department',
+            [
+                'Sales',
+                'Research & Development',
+                'Human Resources'
+            ]
+        )
+
+        Education = st.selectbox(
+            'Education',
+            [
+                'Below College',
+                'College',
+                'Bachelor',
+                'Master',
+                'Doctor'
+            ]
+        )
+
+        EducationField = st.selectbox(
+            'Education Field',
+            [
+                'Life Sciences',
+                'Medical',
+                'Marketing',
+                'Technical Degree',
+                'Human Resources',
+                'Other'
+            ]
+        )
+
+        Gender = st.selectbox(
+            'Gender',
+            ['Male', 'Female']
+        )
+
+        JobRole = st.selectbox(
+            'Job Role',
+            [
+                'Sales Executive',
+                'Research Scientist',
+                'Laboratory Technician',
+                'Manufacturing Director',
+                'Healthcare Representative',
+                'Manager',
+                'Sales Representative',
+                'Research Director',
+                'Human Resources'
+            ]
+        )
+
+        MaritalStatus = st.selectbox(
+            'Marital Status',
+            [
+                'Single',
+                'Married',
+                'Divorced'
+            ]
+        )
+
+        OverTime = st.selectbox(
+            'Over Time',
+            ['Yes', 'No']
         )
 
     submitted = st.form_submit_button('Predict Attrition')
