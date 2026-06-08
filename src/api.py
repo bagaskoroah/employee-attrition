@@ -1,9 +1,9 @@
-from src.utils import *
+from utils import *
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
-from src.path import *
+from path import *
 
 # load config
 config = load_config(config_path=CONFIG_PATH)
